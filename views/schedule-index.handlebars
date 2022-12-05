@@ -1,0 +1,28 @@
+<h1 class="text-center">Flight Schedule</h1>
+<div class="container">
+    <a href="/schedule/add" class="btn btn-primary">+ Add flight schedule</a>
+    <table class="table table-striped mt-4">
+        <tr>
+            <th>Id</th>
+            <th>Flight Number </th>
+            <th>Source</th>
+            <th>Destination</th>
+            <th>Date</th>
+            <th>Time</th>
+        </tr>
+        {{#each data}}
+        <tr>
+            <td>{{this.dataValues.sid}}</td>
+            <td>{{this.dataValues.fnumber}}</td>
+            <td>{{this.dataValues.source}}</td>
+            <td>{{this.dataValues.destination}}</td>
+            <td>{{this.dataValues.date}}</td>
+            <td>{{this.dataValues.time}}</td>
+            <td>
+                <a href="/schedule/update/{{this.dataValues.sid}}">Edit</a> |
+                <a href="/schedule/delete/{{this.dataValues.sid}}" class="text-danger" onclick="return confirm('Are you sure you want to delete this')">Delete</a>
+            </td>
+        </tr>
+        {{/each}}
+    </table>
+</div>

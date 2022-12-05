@@ -1,0 +1,30 @@
+<div class="container">
+    <h1 class="text-center">Update Flight details</h1>
+    <div class="row">
+        <div class="col-sm-6 offset-sm-3">
+            <form method="post">
+                <div>
+                    <label for="fname">Flight Name</label>
+                    <input type="text" name="fname" id="fname" class="form-control" value="{{data.dataValues.fname}}">
+                </div>
+                <div>
+                    <label for="fnumber">Flight Number</label>
+                    <input type="text" name="fnumber" id="fnumber" class="form-control" value="{{data.dataValues.fnumber}}">
+                </div>
+                <div>
+                    <label for="ftype">Flight Type</label>
+                    <input type="text" name="ftype" id="ftype" class="form-control" value="{{data.dataValues.ftype}}">
+                </div>
+                <div>
+                    <label for="fcapacity">Flight Capacity</label>
+                    <input type="text" name="fcapacity" id="fcapacity" class="form-control"  value="{{data.dataValues.fcapacity}}">
+                    </input >
+                </div>
+                
+                <div class="d-grid mt-4">
+                    <button class="btn btn-primary">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

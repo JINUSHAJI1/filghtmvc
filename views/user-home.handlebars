@@ -1,0 +1,41 @@
+<br><br>
+<div class="container">
+
+   <h2> <p class="text-center">WELCOME 
+        <b>{{identity.name}} </b></h2>
+    </p>
+    <a href="/userhome/update/{{identity.id}}" class="btn btn-success d-grid">YOUR PROFILE</a>
+    {{!-- <table class="table table-striped mt-4">
+
+
+
+        <tr>
+            <th>Id</th>
+            <th>Flight Name</th>
+            <th>Offer</th>
+        </tr>
+        {{#each data}}
+        <tr>
+            <td>{{this.dataValues.id}}</td>
+            <td>{{this.dataValues.flightname}}</td>
+            <td>{{this.dataValues.offer}}</td>
+        </tr>
+        {{/each}}
+    </table> --}}
+    
+</div>
+
+<div class="col-sm-4 offset-sm-1" style="margin-top: 10%;">
+            <form action="" method="post" name="loginform">
+                <input type="date" class="form-control" placeholder="Date" name="date"><br>
+
+                <input type="text" class="form-control" placeholder="Start place" name="start">
+
+                <input type="text" class="form-control mt-4" placeholder="Your Destination" name="des">
+
+                <div class="d-grid mt-4">
+                <button type="submit" class="btn" style="background-color: rgb(5, 110, 149);">Search FLIGHT</button></a>
+
+                </div>
+            </form>
+        </div>

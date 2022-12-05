@@ -1,0 +1,33 @@
+<div class="container">
+    <h1 class="text-center">Update Flight Schedule</h1>
+    <div class="row">
+        <div class="col-sm-6 offset-sm-3">
+            <form method="post">
+                <div>
+                    <label for="fnumber">Flight Number</label>
+                    <input type="text" name="fnumber" id="fnumber" class="form-control" value="{{data.dataValues.model_id}}" readonly>
+                </div>
+                <div>
+                    <label for="source">Source</label>
+                    <input type="text" name="source" id="source" class="form-control" value="{{data.dataValues.source}}">
+                </div>
+                <div>
+                    <label for="destination">Destination</label>
+                    <input type="text" name="destination" id="destination" class="form-control" value="{{data.dataValues.destination}}">
+                </div>
+                <div>
+                    <label for="date">Date</label>
+                    <input type="date" name="date" id="date" class="form-control" value="{{data.dataValues.date}}">
+                </div>
+                <div>
+                    <label for="time">Time</label>
+                    <input type="time" name="time" id="time" class="form-control"value="{{data.dataValues.time}}">
+                </div>
+
+                <div class="d-grid mt-4">
+                    <button class="btn btn-secondary">Add</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

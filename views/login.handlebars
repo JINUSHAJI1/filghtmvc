@@ -1,0 +1,33 @@
+{{!-- <section style="height: 100vh;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2Egh-CzsgZrOzKmjG-RkJJ7Nwnu5nwLIUyQ&usqp=CAU');
+    background-repeat: no-repeat;"> --}}
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2Egh-CzsgZrOzKmjG-RkJJ7Nwnu5nwLIUyQ&usqp=CAU" width="40%" height="110%" >
+<div class="container" style="position: absolute;left:15%;top:30%">
+    <div class="row">
+        <div class="col-sm-5 offset-sm-3">
+            <h1 class="text-center">Login</h1>
+            <form method="post">
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="someone@example.com" style="height: 8vh;border-radius:12px;border-color:rgb(22, 73, 112);">
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" class="form-control" style="height: 8vh;border-radius:12px;border-color:rgb(22, 73, 112);">
+                </div>
+                <div class="d-grid mt-4">
+                    <button type="submit" class="btn" style="background-color: rgba(24, 79, 111, 0.837);">Save</button>
+                    {{#if message}}
+                        <p class="text-danger">{{message}}</p>
+                    {{/if}}
+                </div><br>
+                <div class="container" style="">
+          <a href="/register">New User?Register</a><br><br>
+          <span class="psw"><a href="#">Forgot password?</a></span>
+        </div>
+            </form>
+        </div>
+    </div>
+</div>
+

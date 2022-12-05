@@ -1,0 +1,24 @@
+<h1 class="text-center">Flights</h1>
+<div class="container">
+    <a href="/flight/add" class="btn btn-primary">+ Add Flight</a>
+    <table class="table table-striped mt-4">
+        <tr>
+            <th>Flight Number</th>
+            <th>Flight Name</th>
+            <th>Flight Type</th>
+            <th>Flight Capacity</th>
+        </tr>
+        {{#each data}}
+        <tr>
+             <td>{{this.dataValues.fnumber}}</td>
+            <td>{{this.dataValues.fname}}</td>
+            <td>{{this.dataValues.ftype}}</td>
+            <td>{{this.dataValues.fcapacity}}</td>
+            <td>
+                <a href="/flight/update/{{this.dataValues.fid}}">Edit</a> |
+                <a href="/flight/delete/{{this.dataValues.fid}}" class="text-danger" onclick="return confirm('Are you sure you want to delete this')">Delete</a>
+            </td>
+        </tr>
+        {{/each}}
+    </table>
+</div>
